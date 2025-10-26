@@ -4,7 +4,6 @@
 
 Klipper FlashMate helps you manage multiple firmware configurations for different MCUs, build them cleanly, and flash them quickly via **USB** or **CAN** — all from one interactive command-line tool.
 
----
 
 ## Features
 
@@ -14,7 +13,6 @@ Klipper FlashMate helps you manage multiple firmware configurations for differen
 - Flash firmware via USB or CAN (with easy device selection)
 - Consistent, menu-driven workflow for all MCUs
 
----
 
 ## Requirements
 
@@ -22,6 +20,7 @@ Before using **Klipper FlashMate**, make sure you have:
 
 - A working **Klipper build environment**  
   (e.g. `make`, `menuconfig`, and your Klipper source checked out)
+- Kalico works as well
 - **Python 3.6 or newer**
 - The following tools available in your shell:
   - `make`
@@ -30,7 +29,6 @@ Before using **Klipper FlashMate**, make sure you have:
   - [Katapult bootloader](https://github.com/Arksine/katapult) installed on all MCUs  
     (both USB and CAN devices must use the Katapult bootloader)
 
----
 
 ## Installation
 
@@ -96,5 +94,5 @@ Done. Active configuration: .config_octopus
 - For USB-Based flashing, the script uses
   - make flash FLASH_DEVICE=/dev/ttyACMxx
 
-## Author
+---
 Klipper FlashMate was created to streamline the firmware workflow for Klipper users who manage multiple microcontrollers and need a fast, consistent way to build and flash firmware.
