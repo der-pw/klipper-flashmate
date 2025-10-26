@@ -27,7 +27,7 @@ Before using **Klipper FlashMate**, make sure you have:
   - `make`
   - `python` / `python3`
   - `~/klippy-env` (used by Klipper for CAN communication)
-  - **Katapult bootloader** installed on all MCUs  
+  - [Katapult bootloader](https://github.com/Arksine/katapult) installed on all MCUs  
     (both USB and CAN devices must use the Katapult bootloader)
 
 ---
@@ -85,4 +85,16 @@ Listing available USB devices:
 Select device number: 1
 Building firmware...
 Flashing firmware to /dev/ttyACM0 ...
-Done. Active configuration: .config_octopus```
+Done. Active configuration: .config_octopus
+```
+
+## Notes
+- All MCUs (USB and CAN) must run the Katapult bootloader.
+- For CAN-based flashing, the script uses:
+  - ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
+  - ~/klippy-env/bin/python3 ~/katapult/scripts/flash_can.py
+- For USB-Based flashing, the script uses
+  - make flash FLASH_DEVICE=/dev/ttyACMxx
+
+## Author
+Klipper FlashMate was created to streamline the firmware workflow for Klipper users who manage multiple microcontrollers and need a fast, consistent way to build and flash firmware.
