@@ -4,6 +4,11 @@
 
 Klipper FlashMate helps you manage multiple firmware configurations for different MCUs, build them cleanly, and flash them quickly via **USB** or **CAN** — all from one interactive command-line tool.
 
+> [!NOTE]
+> Klipper-Flashmate was created because I didn't want to rebuild the makemenuconfig for every MCU.
+> Therefore, it's quite simple and limited to just two flash commands.
+> [UKAM](https://github.com/fbeauKmi/update_klipper_and_mcus) is more versatile and will hopefully continue to be actively developed.
+> If my script is sufficient for you, feel free to use it. However, since UKAM exists, I won't be doing anything further here.
 
 ## Features
 
